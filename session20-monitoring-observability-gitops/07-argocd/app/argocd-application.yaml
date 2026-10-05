@@ -8,9 +8,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/Maverick-sst/devops-heros.git
+    repoURL: https://github.com/Maverick-sst/devops-heros
     targetRevision: main
-    path: session20-monitoring-observability-gitops/07-argocd/app
+    path: /session20-monitoring-observability-gitops/07-argocd/app
   destination:
     server: https://kubernetes.default.svc
     namespace: session20
