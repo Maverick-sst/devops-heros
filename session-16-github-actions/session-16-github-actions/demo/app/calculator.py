@@ -17,11 +17,13 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")
     return a / b
 
+def power(a,b):
+    return a**b
 
 if __name__ == "__main__":
     print("Calculator Application")
     print("----------------------")
-    print("Available operations: +, -, *, /")
+    print("Available operations: +, -, *, /, **")
     print("Type 'q' or 'quit' to exit.")
     
     while True:
@@ -46,6 +48,8 @@ if __name__ == "__main__":
                 print(f"Result: {multiply(a, b)}")
             elif op == '/':
                 print(f"Result: {divide(a, b)}")
+            elif op == '**':
+                print(f"Result: {power(a,b)}")
             else:
                 print(f"Unknown operation: {op}")
         except ValueError as e:

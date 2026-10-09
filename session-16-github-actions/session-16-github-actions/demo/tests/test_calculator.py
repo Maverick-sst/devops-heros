@@ -3,7 +3,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import pytest
-from app.calculator import add, subtract, multiply, divide
+from app.calculator import add, subtract, multiply, divide , power
 
 
 def test_add():
@@ -25,3 +25,8 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(10, 0)
+
+def test_power():
+    assert power(2,10)
+
+    
